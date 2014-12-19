@@ -1,0 +1,27 @@
+name: Roleplaying is Magic
+markdown: redcarpet
+highlighter: pygments
+destination: _site/
+
+exclude: ['config.rb']
+
+# editions to build
+rules: true
+s1e: true
+s2e: true
+s3e: true
+s4e: true
+
+s2e_pdf: true
+s3e_pdf: true
+s4e_pdf: true
+
+# utilities to build
+utilities: true
+dice_roller: true
+
+watercolours: true
+
+# convert svg images to png files
+# runs faster on many browsers
+convert_svg_to_png: true

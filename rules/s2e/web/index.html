@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" manifest="s2e.manifest">
+    <head>
+        <title>RiM:S2E</title>
+        
+        <!-- Style -->
+            <!-- Desktop -->
+            <link rel="stylesheet" type="text/css" media="Screen" href="cl/css/clear.css" />
+            <link rel="stylesheet" type="text/css" media="Screen" href="cl/fonts/deliciousr/stylesheet.css" />
+            <link rel="stylesheet" type="text/css" media="Screen" href="cl/css/screen.css" />
+
+            
+            <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" href="cl/css/ie.css" />
+            <![endif]-->
+            <!--[if lte IE 6]>
+                <link rel="stylesheet" type="text/css" href="cl/css/ie6.css" />
+            <![endif]-->
+
+            <!-- Mobile -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+            <link rel="apple-touch-icon-precomposed" href="cl/img/iphone_icon.png"/>
+            <link rel="apple-touch-startup-image" href="cl/img/startup.png" />
+
+            <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="cl/css/antiscreen.css" />
+            <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="cl/css/clear.css" />
+            <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="cl/css/handheld.css" />
+            <!--[if IEMobile]>
+                <link rel="stylesheet" type="text/css" media="screen" href="cl/css/handheld.css" />
+            <![endif]-->
+        
+        <!-- Meta-Stuff -->
+        <link rel="shortcut icon" href="cl/favicon.png" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A My Little Pony-based Tabletop RPG" />
+        <meta name="keywords" content="roleplaying, pony, my little pony, friendship is magic" />
+
+        <!-- Dynamic Stuff, for single-page app workings -->
+        <script type="text/javascript" src="cl/js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /* http://yensdesign.com/2009/06/safe-ajax-links-using-jquery/ */
+                var loading = $("#loading");
+                var content = $("#content");
+                var link;
+
+                // load from location hash, if present
+                if (window.location.hash.length) {
+                    startLoading();
+                    link = window.location.hash.substr(2) + " #content";
+                    content.load(link, finishLoading);
+                }
+
+                $(document).on("click", ".jquery_ajax_link", function(event) {
+                    // prevent normal href
+                    event.preventDefault();
+
+                    startLoading();
+                    //content.slideUp();
+
+                    // location hash for tracking
+                    window.location.hash = "!" + $(this).attr("href");
+
+                    // grab link's #content and replace
+                    link_href = $(this).attr("href");
+                    link = link_href + " #content";
+                    content.load(link, finishLoading);
+                });
+
+                function startLoading() {
+                    loading
+                    .css({visibility:"visible"})
+                    .css({opacity:"1"})
+                    .css({display:"block"})
+                    ;
+                    $(window).scrollTop(0);
+                }
+
+                function finishLoading(responseText, textStatus, XMLHttpRequest) {
+                    //content.slideDown();
+                    loading.fadeTo(1000, 0, removeLoadingDiv);
+                    if (textStatus == "error") {
+                        errorLoading(responseText, textStatus, XMLHttpRequest);
+                    }
+                }
+
+                function removeLoadingDiv() {
+                    // sets #loading's display to none
+                    // otherwise links don't work in handheld
+                    loading.css({display:"none"});
+                }
+
+                function errorLoading(responseText, textStatus, XMLHttpRequest) {
+                    // var headers = XMLHttpRequest.getAllResponseHeaders();
+                    // content.html(" <div id=\"col-l\">AJAX Load Error, Sorry!" + "<br /><br />\ns: " + textStatus + "<br /><br />\n t: " + responseText + "<br /><br />\n rh: " + headers + "</div><div id=\"col-r\"><a href=\"index\">Reload</a></div><div class=\"col-clear\"></div> ");
+                    window.location = link_href; // if this fails, we're likely local. just load it normally
+                    //alert("s: " + textStatus +
+                    //    "\n t: " + responseText +
+                    //    "\n rh: " + XMLHttpRequest.getAllResponseHeaders());
+                }
+            });
+        </script>
+      
+    </head>
+    <body>
+        <div id="loading"><span>Loading...</span></div>
+        <div id="bg_mountains"></div>
+        
+        <a name="top"></a>
+
+        <div id="container">
+            
+            <div id="header">
+                <a id="headera" href="http://mlprim.com"></a>
+
+                <a class="b" id="s1e" href="https://docs.google.com/viewer?a=v&pid=explorer&chrome=true&srcid=0B5IFnI6cpZN4YzhiMjBiMDEtMGNlYi00OWRjLThlNjAtNDBkOGEzOTk3NjFj&hl=en_GB">S1E</a>
+                <a class="b be jquery_ajax_link" id="s2e" href="index">S2E</a>
+            </div>
+            
+            <div id="content">
+                
+                
+                <div class="center" id="col-l" style="min-height: 435px;">
+                    <div class="cover_space"></div>
+                    <p>
+                        <h1>My Little Pony: Roleplaying is Magic</h1>
+                        <h2>Season Two Edition</h2>
+                    </p>
+                    <div class="cover_space"></div>
+                    <p>
+                        © Roan Arts 2012
+                    </p>
+                    <div class="center cover_names">
+                        <p class="float-left">
+                            Tall Tail (James Weimer)<br />
+                            Know-It-All (Sam Hanson)<br />
+                        </p>
+                        <p class="float-right">
+                            Artsy Heartsy (Daniel Oakley)<br />
+                            Pixel (Caytlin Vilbrandt)<br />
+                            Sketchbook (Micheal Simpson)<br />
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                
+                
+                <div class="nav" id="col-r">
+                    <h3>Navigation</h3>
+                    <div style="margin: 3px 0 0" class="center">
+                        <a href="#top">top</a>
+                    </div>
+
+                    <div style="margin: 3px 30px 3px">
+                        <span class="float-left">&lt; prev</span>
+                        <a class="float-right jquery_ajax_link" href="chap_01.html">next &gt;</a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="center">
+                        <a href="#bottom">bottom</a>
+                    </div>
+                    <div class="col-r-header-space"></div>
+
+
+                    <h3>Bookmarks</h3>
+                    <a class="ne jquery_ajax_link" href="index.html">Cover</a>
+                    <a class="jquery_ajax_link" href="chap_01.html">Publication Info</a>
+                    <a class="jquery_ajax_link" href="chap_02.html">Dedications</a>
+                    <a class="jquery_ajax_link" href="chap_03_10.html">Introduction</a>
+                    <a class="jquery_ajax_link" href="chap_03_20.html">For Players</a>
+                    <a class="jquery_ajax_link" href="chap_03_30.html">For GMs</a>
+                    <a class="jquery_ajax_link" href="chap_04.html">Thanks for Reading!</a>
+                    <div class="col-r-header-space"></div>
+                    
+                    <h3>Credits</h3>
+                    <ul>
+                        <li><a href="http://www.exljbris.com/delicious.html">Delicious font</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-clear"></div>
+            </div>
+            
+            <div id="footer">
+                © Roan Arts - Powered by <a href="https://github.com/Danneh/ConDescend">ConDescend</a>
+            </div>
+
+            <a name="bottom"></a>
+        </div>
+    </body>
+</html>

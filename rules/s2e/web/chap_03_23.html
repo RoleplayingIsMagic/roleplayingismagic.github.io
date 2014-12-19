@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" manifest="s2e.manifest">
+    <head>
+        <title>RiM:S2E - The Wide, Wide World of Equestria</title>
+        
+        <!-- Style -->
+            <!-- Desktop -->
+            <link rel="stylesheet" type="text/css" media="Screen" href="cl/css/clear.css" />
+            <link rel="stylesheet" type="text/css" media="Screen" href="cl/fonts/deliciousr/stylesheet.css" />
+            <link rel="stylesheet" type="text/css" media="Screen" href="cl/css/screen.css" />
+
+            
+            <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" href="cl/css/ie.css" />
+            <![endif]-->
+            <!--[if lte IE 6]>
+                <link rel="stylesheet" type="text/css" href="cl/css/ie6.css" />
+            <![endif]-->
+
+            <!-- Mobile -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+            <link rel="apple-touch-icon-precomposed" href="cl/img/iphone_icon.png"/>
+            <link rel="apple-touch-startup-image" href="cl/img/startup.png" />
+
+            <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="cl/css/antiscreen.css" />
+            <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="cl/css/clear.css" />
+            <link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="cl/css/handheld.css" />
+            <!--[if IEMobile]>
+                <link rel="stylesheet" type="text/css" media="screen" href="cl/css/handheld.css" />
+            <![endif]-->
+        
+        <!-- Meta-Stuff -->
+        <link rel="shortcut icon" href="cl/favicon.png" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A My Little Pony-based Tabletop RPG" />
+        <meta name="keywords" content="roleplaying, pony, my little pony, friendship is magic" />
+      
+    </head>
+    <body>
+        <div id="bg_mountains"></div>
+        
+        <a class="name" name="top"></a>
+
+        <div id="container">
+            
+            <div id="header">
+                <a id="headera" href="http://mlprim.com"></a>
+
+                <a class="b" id="s1e" href="https://docs.google.com/viewer?a=v&pid=explorer&chrome=true&srcid=0B5IFnI6cpZN4YzhiMjBiMDEtMGNlYi00OWRjLThlNjAtNDBkOGEzOTk3NjFj&hl=en_GB">S1E</a>
+                <a class="b be jquery_ajax_link" id="s2e" href="index">S2E</a>
+            </div>
+            
+            <div id="content">
+                
+                
+                <div id="col-l">
+
+                    <div class="textbox">
+                        <h1 id="wideweirdworld">The Wide, Wide World of Equestria</h1>
+
+                        <p>An unnatural thunderstorm forms over the town one night, and in the flashes of lightning, the silhouettes of strange serpentine creatures can be seen circling in the clouds. An oddball cousin comes to visit for the weekend, but their ways are strange in the eyes of ‘normal’ ponies. After the big spring festival, a young foal has gone missing in the Everfree Forest. While cleaning out a dusty attic, an old forgotten chest is found, containing a map to hidden treasure. In Equestria, adventure and life lessons can come from almost anywhere; even the most seemingly simple and ordinary events can become something ponies remember for the rest of their lives.</p>
+
+                        <p>In My Little Pony: Roleplaying is Magic, your characters will embark on these adventures and memorable events, trusting in themselves and their friends to see them through hardships and share in triumphs. Because characters may do anything from fighting off a fearsome beast to planning and executing an important festival over the course of their story, the game is designed to follow a loose narrative/cinematic style of play rather than a more rigid one. Actions a character makes, and tasks they attempt, are not chosen from a list of abilities and powers, but rather are described and developed, then resolved by interpretation using the rules.</p>
+
+                        <p>New players, or those who are used to more ‘tactical’ pen and paper roleplaying games, may have some difficulty adapting to this method, initially. But this section of the book is dedicated to explaining how the game is played, and serves as a guide to introduce players to the narrative, character-driven style of play in My Little Pony: Roleplaying is Magic.</p>
+                    </div>
+
+
+
+                    <div class="textbox">
+                        <h2 id="shallwe">Shall We?</h2>
+
+                        <p>At its heart, My Little Pony: Roleplaying is Magic is played in two distinct ‘modes’ based on the situation at hand: <em>Narrative Mode</em>, and <em>Cinematic Mode</em>. While each mode is discussed in more detail later, it is important to get a brief overview and introduction to both, to get a feel for when the game is being played in each mode. Veteran roleplayers will likely recognize these modes easily, but for new players, this summary can help to avoid confusion.</p>
+
+                        <p><em>Narrative Mode</em> is the mode most of the game is played in. It is a loose and reasonably informal ‘discussion’ style of play, where the characters are not generally being threatened and are free to take whatever actions and attempt whatever tasks they wish. There is no set turn order during Narrative Mode, and the GM decides when the focus shifts between characters who are not near each other. Time can pass quickly or slowly in Narrative Mode, as well as being paused entirely. In video game terms, this is typically the part in most roleplaying games when the characters are free to roam a town or world map between action sequences or encounters.</p>
+
+                        <p><em>Cinematic Mode</em> is the mode in which most of the action of the game is played. It is more formal and structured, primarily because the passage of time from moment to moment is more important in the situation at hand. In general, Cinematic Mode is used whenever the characters are in an ‘action sequence,’ or a situation where they (or others) are in danger, or are on a time limit. There is a loose turn order, and the concept of ‘rounds’ in Cinematic Mode, explained in more detail later. In video game terms, this is typically the part in most roleplaying games when the characters are in combat, or must accomplish something in a set amount of time.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="onceuponatime">Once Upon a Time…</h3>
+
+                        <p>A bright, sunny day dawns, bringing with it the promise of adventure and friendship; the trees are lit in oranges, reds, and yellows, and the brisk morning chill hangs in the air. What do you do this morning?</p>
+
+                        <p>This is Narrative Mode, the mode most of the game is played in, and the most informal of the two game modes. Narrative Mode is primarily character-driven; the GM will typically give the set-up to the situation, and let the players and their characters go about their business, responding to them and reacting to the actions they take. Narrative Mode could be thought of as the time between action sequences when the characters can decide on what they are doing, and begin doing it. This can be anything from planning and preparation, to exploration and investigation, to going about their business, even to resting and recovering.</p>
+
+                        <p>The princess is coming to town in a few days, and everypony needs to help set up for the parade. Several friends explore an old cave outside of town, looking for buried treasure. One character is looking for another, and asks around town to see if anypony knows where they are. After a hard day’s work, a group of friends relax and cook a meal to enjoy together. All of these are examples of situations appropriate to Narrative Mode.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="sharecare">Giving Everyone a Turn</h4>
+
+                        <p>Because there is no strict turn order in Narrative Mode, it is not uncommon for one character to keep going and going without considering that other characters might be waiting to take their actions. With only one GM at the table, only one character can act at a time—and it is easy to become the center of attention. For this reason, consider the other players when having your character act in Narrative Mode; from time to time, make sure no one is waiting to have their character do something, and if they are, put your character temporarily on hold and let them have a turn.</p>
+
+                        <p>For example, when exploring an old ruin looking for a lost foal, instead of having your character try everything they can think of before letting anyone else have a turn, have them try one or two things, then put them on hold so that others can try something. While the GM will generally put a character on hold to let others have a turn, it is important not to rely on the GM, and to put yourself on hold and check with the rest of the group. This promotes a friendly table atmosphere.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="playwiththem">Playing With Time</h4>
+
+                        <p>The passage of time is less important and less strictly enforced in Narrative Mode, and as such, it can be ‘played with’ to a certain degree. Typically, this takes two forms: a ‘meanwhile’ or a ‘time skip.’ A meanwhile is usually found when the group of characters have split up. In an effort to keep events running concurrently, the GM will ‘pause’ one group, then have the second group take their actions for the same period of time, alternating between the groups.</p>
+
+                        <p>For example, if two characters out of a group of four have been doing things for an hour of ‘in-game time,’ the GM may put them on hold, rewind the clock, and shift to the other two characters, so that they can act for that same hour; ‘meanwhile,’ the events are running at the same time. A ‘time skip,’ on the other hand, is usually a fast-forward of in-game time to avoid tedious scenes and actions. For example, if the characters go to sleep for the night, the GM will typically time skip until the following morning—or until something happens that night.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="knowmeequestria">Making Yourself Known</h4>
+
+                        <p>Because Narrative Mode is much more loose and informal than Cinematic Mode, characters are not generally prompted to take each individual action; for this reason, it is important for a player to state clearly what their character is doing or not doing during a scene in Narrative Mode. Sometimes, new roleplayers (and some more experienced ones) have a tendency to use the ‘of course my character would have’ logic. For example, a group makes a quick trip into town, then goes out exploring and comes across a cliff. One player claims that their character has a rope, even though their did not say that their character had gotten it, or picked up climbing gear; because ‘of course my character would have’ gotten those things.</p>
+
+                        <p>This kind of logic is not valid in My Little Pony: Roleplaying is Magic. While a GM might, from time to time or after having gotten to know a group of characters’ tendencies, let something like this slide, the general rule of thumb is that if you didn’t state that your character did something, then they didn’t do it.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="aintgotallday">We Ain’t Got All Day</h3>
+
+                        <p>A baby carriage careens down a steep hill toward the edge of a high cliff, but a fearsome pack of Timber Wolves stands between the group and the carriage. Will you succeed in the rescue?</p>
+
+                        <p>This is Cinematic Mode, the mode most ‘action sequences’ of the game are played in. Cinematic Mode is mostly action-driven; characters attempt tasks and react to the situation at hand, in order to overcome some pressing challenge. The characters and the GM alternate taking ‘turns’ during ‘rounds’ of play which keep track of time more strictly than Narrative Mode. Cinematic Mode could be thought of as a turn-based ‘combat mode,’ though it is important to note that not all challenges have an adversary; sometimes, the situation itself is what must be overcome.</p>
+
+                        <p>A pack of menacing Timber Wolves has the group surrounded, and they must fight their way out. A bridge has gone out, and the group must rescue ponies before they fall into the raging river. Parasprites are devouring all the food in town, and the group must stop them before there’s nothing left. To rescue a missing foal, the group must distract an enraged dragon. All of these are situations appropriate to Cinematic Mode.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="turnorder">The Turn Order</h4>
+
+                        <p>In Cinematic Mode, the game progresses in ‘rounds.’ A round is an incremental measurement of time, usually only a few seconds, in which several actions take place. The group of characters and the GM alternate taking turns, and each time that both have taken their turn, a new round begins. The point of following a structured format of turns and rounds is to emphasize the importance of each action taken during a stressful or dangerous situation, and to show how each action can quickly change the course of such a situation. This section will explain how each round of Cinematic Mode progresses.</p>
+                    </div>
+
+                    <div class="sidebar">
+                        <h5 id="initiative">Taking the Initiative (Away)</h5>
+
+                        <p>Veteran roleplayers will undoubtedly notice the lack of an ‘initiative’ system to determine who goes first and in what order during Cinematic Mode. In My Little Pony: Roleplaying is Magic, turn order is handed more narratively than tactically. Because the difficult situations in the show tend to be presented as more of a narrative back-and-forth than a tactical engagement, the simply structured and standardized progression of Cinematic Mode is meant to focus more on character actions and promoting that ‘back-and-forth’ feel. Thus, there is no ‘initiative’ type system in My Little Pony: Roleplaying is Magic.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="twistturn">Twists and Turns</h4>
+
+                        <p>The GM always has the first turn during a round of Cinematic Mode. During their turn, the GM sets up the scene and describes the situation, as well as enacting the events which take place around the characters during the round. The GM ‘plays the monsters’ on their turn, though they also play the environment, non-player characters, and any additional elements and aspects of the situation at hand. This includes any actions taken against the group of characters.</p>
+
+                        <p>For example, the GM describes how an unnatural thunderstorm has caused a bridge to go out. Several ponies are clinging to the bridge, in danger of falling into the river below. While the group of characters rush to the scene, however, several lightning bolts come from the sky, on a course to strike two of them, and strong gusts of wind push against them all, as if the storm is trying to slow their approach.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="lookoutbelow">Look Out!</h4>
+
+                        <p>Immediately following the GM’s turn, any characters who are influenced by the events of the GM’s turn may be entitled to make a ‘Reactive Task’ in response. Typically, Reactive Tasks are defensive in nature, attempting to avoid potential harm to the character—though they may be more aggressive, or sacrificial; a character may sometimes wish to accept potential harm in order to accomplish something, or save someone else from harm. Reactive Tasks are explained in more detail later.</p>
+
+                        <p>Reactive Tasks are generally only granted to characters in danger of harm, though the GM may sometimes grant them in order to stop something from happening, such as to push someone out of the way of harm directed at them. All characters who are entitled to Reactive Tasks take them simultaneously, sharing one turn amongst themselves. This means that the players may choose any order in which to take the actions; one character’s Reactive Task result might influence what the next character does as their Reactive Task.</p>
+
+                        <p>For example, the two characters in danger of being struck by lightning bolts in the previous example would be entitled to Reactive Tasks (probably to avoid the lightning, though this would be up to the character’s player), though the rest of the group might not.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="letsdothis">Let’s do this!</h4>
+
+                        <p>Once any Reactive Tasks have been resolved, it becomes the group of characters’ turn. During their turn, characters may make an Active Task, which can be more involved than a Reactive Task as it is attempted on the character’s terms. As with performing Reactive Tasks, all the characters share one group turn, and may have their characters attempt actions in any order they wish, adapting to the results of each Active Task attempted. Active Tasks are explained in more detail later.</p>
+
+                        <p>For example, once the Reactive Tasks in response to the lightning strikes have been resolved in the previous example, the group of characters now gain their group turn, and each character may make an Active Task attempt. This might be anything from trying to fly through the strong headwinds to save the ponies in danger, casting a spell to try to repair the bridge, or trying to knock a tree down to dam up the river.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="fulllife">Consequences</h4>
+
+                        <p>After the Active Tasks of the characters are resolved, the GM has a chance to relate any further consequences of the characters’ actions; this can also be an opportunity for the GM to give hints, or highlight certain dangers as being more important than others. Once this is done, a new round begins, with the GM taking their turn as normal.</p>
+
+                        <p>For example, the characters who tried to fly through the headwinds couldn’t get through, in the previous example. The GM takes the time at the end of the round to describe how the winds became more fierce the harder they tried to fly through them, and that flashes of lightning showed silhouettes of serpentine creatures up in the clouds. This allows the GM to ‘highlight’ certain aspects of the situation, to help players make informed decisions about their characters’ actions.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h3 id="niceworkbro">Nice Work, Rainbow Crash!</h3>
+
+                        <p>Sometimes, things go wrong. This is a truth in any interaction, and a game is no different. Because of this, the players and the GM may sometimes need to ‘retcon’ (from the phrase “retroactive continuity”) things. Retconning is the act of going back and changing something which has already happened, or inserting an event which did not occur, as if it did. Typically, retconning is a practice to be avoided, as excessive retconning can lead to confusion. However, from time to time it is necessary, and with the GM’s approval, can be done.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="nowaitimean">Rectonning for Clarification</h4>
+
+                        <p>Sometimes, though the game is designed to promote description and discussion, someone will misunderstand something someone else said or had their character do, and it may be necessary to retcon for clarification. For example, if a non-player character gets offended over something a character said, but the character didn’t say it—rather, the GM misunderstood the player’s description—it may be necessary to retcon, and have the non-player character not have become offended and angry in the first place.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="nowaityoumean">Retconning for Narration</h4>
+
+                        <p>Sometimes, there are continuity errors which have led to confusion over the situation at hand or have led to unnecessary mistakes. In this case, it may be necessary to retcon for narration. For example, a group is sent to retrieve a red gem from a cave, but one of the players wrote down ‘blue gem’ instead, or the GM meant to say ‘blue gem’ instead, and when the characters retrieve the ‘wrong’ gem, it is clearly a mistake. It may be necessary to retcon, and have the characters have actually retrieved the correct gem.</p>
+                    </div>
+
+                    <div class="sidebar">
+                        <h5 id="ithewholetimeline">Dr. Whooves Says…</h5>
+
+                        <p>Retconning is a powerful tool, and one which it is sometimes necessary to use. However, it is equally important to ensure that it is used responsibly, and with the consent of everyone at the table. If a retcon is proposed, it should be opened to discussion—and potentially a vote—to allow anyone with objections to it to raise them openly. Sometimes, where a retcon in one way might make the story easier, it might be better to retcon things another way, or leave things as they are, to make the story even better.</p>
+                    </div>
+
+
+
+                    <div class="textbox">
+                        <h2 id="geterdone">Getting ‘er Done</h2>
+
+                        <p>The backbone of roleplaying in My Little Pony: Roleplaying is Magic is understanding and making good use of ‘Tasks’ (sometimes called ‘rolls’ or ‘checks’ for convenience). A Task is anything a character does which is, or might be, governed by a roll of the dice. This can range anywhere from trying to leap over a pit, to trying to remember an ancient story, to casting a magic spell, to resisting intimidation or injury, to convincing someone that you are right about something.</p>
+
+                        <p>Most actions a character can take are considered to be tasks—even those which generally do not require a roll of the dice (such as walking down the street), because of the potential for them to require a roll of the dice in certain situations (such as walking down the street during an earthquake). In this section, tasks will be explained in detail, as well as how to make use of them correctly, and what is required for most tasks.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="beesquawk">Can Bees Squawk?</h3>
+
+                        <p>Tasks, for the most part, break down into two types: Active Tasks and Reactive Tasks. Both of these have a special use as well, and may be optional. Active Tasks are tasks attempted by a character by their own choice and on their own initiative, whereas Reactive Tasks are tasks attempted by a character in response to a situation which prompts them to act. The special uses of these are that a character may sometimes simply ‘assist’ another character as an Active Task, and that a character must sometimes just resist harm as a Reactive Task. All of these are explained in more detail in this section.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="active">Active Tasks</h4>
+
+                        <p>Whenever a character has the freedom and the opportunity to attempt to do something of their own free will—instead of being prompted to act based on an opposing change in their situation—they are making an Active Task. For example, if a dragon breathes flame toward a character, the actions they take to avoid or defend against the flames would not be considered an Active Task, as they are taken in response to the opposing change in the situation. However, once they had avoided the flames, and had the freedom to act on their own initiative, their actions would be considered to be Active Tasks.</p>
+
+                        <p>Active Tasks, by and large, are more dynamic than Reactive Tasks (explained later), because when a character is free to act on their own volition, they typically take more interesting actions. For this reason, it is Active Tasks which tend to drive the story forward. For example, in the dragon example above, a character diving out of the way of a dragon’s flame breath is not generally very dynamic and interesting. However, their Active Tasks afterward might have a significant narrative impact; bringing down the roof of a cave onto the dragon’s head, or trying to reason with the dragon, or any number of other actions the character might take at that point, are much more dynamic and will move the story forward.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h5 id="lending">Lending a Helping Hoof</h5>
+
+                        <p>Sometimes, there is simply nothing for a character to do, in the eyes of their player—or at least nothing which would be in keeping with the concept of the character themselves, or which would suit the flow and feel of the story. For example, a character who is very timid might simply not be able to bring themselves to argue with the town bully, or if the group’s ‘brave’ member is facing down a threat, it may be inappropriate to step in and steal the spotlight, so to speak. However, in many cases, it may make sense for them to be supportive of their friends who are taking action. In these cases, a character may choose to simply ‘assist’ one other character, instead of taking an action themselves. Typically, this relates to situations in the rounds of the game’s Cinematic Mode, where the proverbial ‘spotlight’ is on another character for the moment.</p>
+
+                        <p>Mechanically, when a character ‘assists’ another character, if that character is making a dice roll as part of a task attempt, they gain a unique bonus to the roll based on the number of friends assisting them. This is called a ‘Harmony bonus,’ and is explained in more detail later. In addition, assisting a character may have other costs and benefits associated with it, including granting a Unicorn Pony character expanded use of their spellcasting and magic, at the extra cost of a point of Willpower from the character assisting them.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="reactive">Reactive Tasks</h4>
+
+                        <p>Whenever a character is being prompted to take action in response to an opposing change in their situation, they are making a Reactive Task. For the most part, Reactive Tasks might be called ‘defenses’ or ‘defensive actions,’ but this does not capture their full scope. While a character may certainly find themselves making Reactive Tasks in response to potential harm to themselves, they may also make Reactive Tasks when something is occurring which is immediately pressing; for example, if an infant pony is about to fall off a bookshelf, a character may be prompted to make a Reactive Task—presumably to catch them.</p>
+
+                        <p>It is important to note that Reactive Tasks are usually, but not always, defensive or preventative in nature; a character always has the option to simply accept the impending consequences of the situation through inaction, or to adopt a strategy of ‘the best defense is a good offense.’ For example, if a building’s rafters are falling down onto a character, that character is not required to try to dodge them; they may choose to try to ‘catch’ them instead—though acting in this way might lead a character to accept harm they might have avoided otherwise.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h5 id="resisting">Resisting Harm</h5>
+
+                        <p>While Reactive Tasks are in response to an opposing change in a character’s situation, they still typically allow a great deal of freedom; while not as wide open in choice and options as an Active Task, a Reactive Task may still allow a character to do a large number of different things. The exception to this rule is when the Reactive Task a character must make is directly resisting harm done to them.</p>
+
+                        <p>Typically, this is the case when a character has accepted harmful consequences to their person, or if they have failed to avoid them through failing to successfully perform an action. A ‘resisting harm’ Reactive Task is generally done to measure how badly the character was harmed. The effects and types of harm, as well as how they are handled, are explained in more detail later.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="bitingoff">Biting Off More Than You Can Chew</h3>
+
+                        <p>All tasks must be explained and clearly stated, so that the players and the GM are aware of what the character is attempting to do. However, there are several guidelines for stating a task which should be followed to ensure that it is being done properly and fairly to everyone at the table. The first of these guidelines cover avoiding trying to do too much with a task, how to tell if this is the case, and why it should be avoided.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="conditionals">Conditionals</h4>
+
+                        <p>In general, the first aspect to be wary of is whether or not the task statement has ‘conditionals’ in it. These are typically terms like ‘if,’ ‘unless,’ or ‘when,’ and tend to turn a task statement into a statement of a strategy instead of an action. For example, a task stated as “look for the missing pet mouse unless anyone would see me” is using the conditional “unless” to turn the action “look for the missing pet mouse” into a strategy instead of an action.</p>
+
+                        <p>Conditionals should be avoided because they are difficult to handle for everyone involved, and assume that a character will be aware of outcomes which may, in fact, take a character by surprise. For example, in the missing mouse example above, the character may not be aware that they have been seen, or may not be able to avoid being seen; it is not fair for them to assume such a broad outcome and try to achieve it through a single task. Actions in roleplaying are best done step by step, to allow for unexpected outcomes.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="complexity">Complexity</h4>
+
+                        <p>The next aspect to be wary of is whether or not the task is overly complex. Usually, this involves a single task trying to do several things which are dependent on each other, or which would split the character’s focus too much. For example, a task stated as “chase down the runaway pig, tackle it, tie it up, and drag it back to the farm” is probably too complex; each individual part is dependent on the next, and should be broken up into a few actions. Some of these actions could be combined, however—for example, “chase down the runaway pig and tackle it” could be a single action because they constitute a single exertion or motion, whereas “tie it up” and “drag it back to the farm” should be individual actions.</p>
+
+                        <p>Over-complexity should be avoided because it pushes the action along too fast, and leaves little room for interrupting events or for a situation to change in response to actions taken. For example, in the runaway pig example above, the pig may break the rope while being tied up, or someone might come along and try to take the pig before it is brought back to the farm; it is restrictive to the story to try to do too much with a single task. Actions in roleplaying are best done step by step, to allow the characters and the GM to react.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="powernap">I Was Busy Napping</h3>
+
+                        <p>In addition to trying to do too much, it is important not to do too little with a task; certain component parts of a task should not be made into tasks themselves, in the interest of keeping the game’s pace from slowing down too much. The following guidelines help address doing too little with a task, how to tell if this is the case, and why it should be avoided.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="observation">Observation</h4>
+
+                        <p>In general, a character does not need to attempt a task in order to use their senses normally; everypony can see, and hear, and smell, as part of their normal everyday experience. As it relates to the performance of other tasks, observation in this manner does not usually require a task itself. For example, running up to the edge of a cliff and jumping off of it to leap over a gap does not generally require a task to look for the edge of the cliff, or judge the distance of the gap; these are assumed to be done as part of the run and leap.</p>
+
+                        <p>The exception to this rule, however, is active observation. For example, looking around in the dark to try to spot the source of heavy breathing in the shadows, is a proper use of observation as its own task. In short, unless the primary action a character is taking is observation, it can simply be left as part of a larger task, in the interest of keeping the game moving.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="micromanage">Micromanaging</h4>
+
+                        <p>Not every step of every task requires a task in and of itself. In the same way that a pony doesn’t need to focus on flexing every individual muscle as part of taking a step—but instead simply takes the step itself, a character doesn’t need to use a task for each individual part of a larger single action. For example, when drawing a picture, a character wouldn’t need to make a task attempt for each line on the page—but rather, a single task attempt for the picture itself.</p>
+
+                        <p>The exception to this rule is that it may be overridden by the GM for narrative purposes. For example, while a baker making a cake might make one task attempt for the whole cake, a group of foals making a cake for the first time might need to make task attempts for each major step in the recipe—as this would make the scene more entertaining and fun, whereas making the baker take all of the same steps might make the game tedious.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="lastsummer">I Know What You’re Up To…</h3>
+
+                        <p>The next guidelines for properly stating a task deal less with things to avoid, and more with things which are good to do. First are making the objectives, or intended outcomes, of tasks known to the other players and the GM. These guidelines can help a task become more linked to the narrative of the story, instead of simply being character actions.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="idealoutcome">The Ideal Outcome</h4>
+
+                        <p>When stating a task, it is important to also state what the intended outcome of the task is. This allows the other players to decide whether or not to adapt their characters’ actions to follow suit, and allows the GM a bit of insight into the task in terms of its value to the narrative of the story. For example, a character who flies away from a dragon might intend to flee from it, or might intend to distract and ‘bait’ it away from their friends. These intended outcomes give the task different narrative value, and the GM may assign different difficulty levels to them in the interest of enriching the story.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="secondaryoutcome">Secondary Outcomes</h4>
+
+                        <p>In addition to the intended outcome of the task, it is important to state any secondary outcomes which might have been considered and intended. This allows the GM to adapt the world and its reactions more dynamically to the task being attempted, and gives them options for how to govern the task’s actual outcome in more depth than simply success or failure. For example, a character who tries to blind a rampaging monster with a flash of light might state a secondary outcome of “at least warn the others, or signal my location.” This allows the GM to gain insight into the action, and while the monster may not be blinded, it doesn’t necessarily mean the action was entirely wasted.</p>
+                    </div>
+
+                    <div class="sidebar">
+                        <h5 id="buddha">Disabling God-Mode</h5>
+
+                        <p>It is important to remember that, while task statements should include the intended outcomes of the action being taken, they should not include the actual outcomes themselves if the task has any chance of failure. This is an age-old roleplaying concept called ‘God-Moding,’ in which a character attempts, and accomplishes, a task—without giving the option for failure. Because of the role of dice, and chance, as well as story elements you may not be aware of, it is important to disable this ‘god-mode’ and simply attempt tasks, instead of assuming they will be accomplished in their task statement.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="justscream">I Could Just Scream</h3>
+
+                        <p>The final guidelines on stating a task deal with making any weaknesses in the task known. This may seem like a detrimental thing to do on the surface, but it is important to remember that the GM is not the enemy. In the same way that stating the intended outcomes of a task help the GM to potentially mitigate direct failure, stating the weaknesses of a task (if any; they are optional) help the GM to add flavor and dynamic tension to a scene by creatively making use of and emphasizing them. Typically, task weaknesses fall into three general categories, discussed in this section.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="pullpunches">Pulled Punches</h4>
+
+                        <p>A character might ‘pull their punches,’ or stop short of giving their all in attempting a task for any number of reasons; perhaps they are worried about overextending themselves, or harming someone else in the process. Perhaps they are unsure of the task itself, whether or not it is the right thing to do at the moment. By and large, however, ‘pulled punches’ are intended to avoid drastic consequences at the cost of giving less than total effort.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="overextending">Overextending</h4>
+
+                        <p>A character might ‘overextend’ themselves in attempting a task, by putting forth effort and leaving themselves open to harm in the process. For example, a character might overextend by flying through an avalanche to save a friend, rather than flying around it. This opens the character to harm, which the GM may utilize to make the story more interesting and present a new or different situation to the characters.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="allornothing">All or Nothing</h4>
+
+                        <p>A character might go ‘all or nothing’ in regards to a task, attempting something which will generally either succeed wonderfully or fail spectacularly. For example, a character might jump in front of an out-of-control wagon to try to stop it from careening over the edge of a cliff. Whether they succeed or fail at the task, the outcome is likely to be memorable and spectacular, and the GM may use this to ‘spotlight’ the action itself.</p>
+                    </div>
+
+
+
+                    <div class="textbox">
+                        <h2 id="fancymath">Fancy Mathematics</h2>
+
+                        <p>Any time a task requires a roll of the dice to determine its outcome, it may be called a ‘roll’ or a ‘check’ for convenience. Many factors apply to this kind of task, including numerical and mathematical rules which must be followed to ensure that the task is resolved fairly. This section will detail when a task is considered to be a ‘check,’ and how to handle checks that are made—including all of the mathematical rules involved.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="andtwentypercentcooler">Ten Seconds Flat</h3>
+
+                        <p>It is important to note that not all tasks require use of the dice to resolve; in effect, not all tasks are checks. In general, the GM will tell you when you need to make a check, but it is good to understand the principle involved. Whenever a task has a reasonable chance of failure, whether through difficulty, chance, a stressful situation, or the task’s narrative implications, a check should be made. Whenever a task has little effect on a situation, or is routine enough not to need a chance for failure, a check should not be made. For example, a character walking down the street has no reason to need a check to accomplish the task. However, if they were trying to walk straight during an earthquake or in hurricane-force winds, they would need to make a check then.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="figureitout">I Have to Figure this Out!</h3>
+
+                        <p>Every check is based on one or more Primary or Secondary Attributes. This reflects the core aspects of the character which govern their ability to successfully complete the task by succeeding at the check involved. However, there is no comprehensive list stating which attributes form the basis for which actions. Instead, it is up to the player(s) and the GM to agree upon a basis, through their understanding of the attributes themselves and what they represent, and their understanding of what the task, or check, involves in terms of those attributes.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="primaryattributes">Primary Attribute Checks</h4>
+
+                        <p>Typically, all Active Tasks (and most Reactive Tasks) which require a check will use Primary Attributes (Mind, Body, and Heart) as their base. Primary Attribute Checks reflect a character’s core capabilities, strengths, and weaknesses, and are well-suited to the typical things a character may do from day to day. Primary Attribute Checks may be thought of as checks in which a character is applying themselves.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="secondaryattributes">Secondary Attribute Checks</h4>
+
+                        <p>Typically, Reactive Tasks which involve resisting harm require a check based on a character’s Secondary Attributes (Energy, Courage, Fortitude, and Willpower). Secondary Attribute Checks reflect a character’s resistances and ability to deal with hardship, and are well-suited to counteracting the difficulties a character may face which could harm them. Secondary Attribute Checks may be thought of as checks in which a character is resisting something.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="splitthecheck">Split Checks</h4>
+
+                        <p>Sometimes, a task cannot easily be determined to be governed by only one attribute. In this case, it is best to make the check a ‘split check,’ using two attributes instead of one. The attributes must be of the same type (i.e., two Primary Attributes or two Secondary Attributes, but not one of each type) to make a split check. A split check uses half of each of the two contributing attributes as its base, and the total of the two is rounded up if necessary.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="gettough">Tough Task ahead I face</h3>
+
+                        <p>Once the basis for the check has been determined, the check must be performed. This involves rolling a twenty-sided dice (d20) and adding all bonuses which apply, as well as voluntary expenditure of certain points, and the application of certain special rules. While making a check becomes easy and second-nature given time and practice, learning how to make a check can be one of the first major hurdles to new players who are learning how to play My Little Pony: Roleplaying is Magic. For this reason, this section will cover, in detail, how to make a check from start to finish—including explanations of all the mathematical processes and formulae involved—to determine its result. The following sections will then cover how to interpret this check result.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="getharmony">Harmony Bonus</h4>
+
+                        <p>First, determine the check’s Harmony bonus, which is granted by characters who are assisting yours. For each character who is using their action to assist yours in the task, your character gains a cumulative +1 bonus to the check result. For example, one friend assisting grants a +1, two friends assisting grants a +3 (+1, +2), three friends assisting grants a +6 (+1, +2, +3), four friends assisting grants a +10 (+1, +2, +3, +4) and so on; each friend adds to this bonus an amount equal to one more than the last friend’s contribution.</p>
+
+                        <p>The restriction on this bonus is that no more than five friends may assist a character for any given check (making the highest possible Harmony bonus a +15). With full assistance from all of their friends, the Harmony bonus a character receives may be the single largest bonus they gain to a check.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="getwillpower">Spending Willpower</h4>
+
+                        <p>Second, the character may decide to spend a single point of Willpower on the task to improve its check result (only one point of Willpower may be spent per check). It is important to note that this must be done before the d20 is rolled; a character chooses to exert extra effort before they know if the task could have succeeded without it. Because of this, and the potential for wasting Willpower, it is important to carefully consider how important the task is to your character and the situation at hand.</p>
+
+                        <p>If the character spends a point of Willpower, they gain a bonus to the check result equal to the amount of Willpower they had before the point was spent. For example, a character with seven points of Willpower who spends one on a check gains a +7 to the check, and then is reduced to six points of Willpower. The next time they spend Willpower on a check, they gain a +6, and are reduced to five points of Willpower. If a character spends their last point of Willpower, they become sidelined as normal after the check is resolved—however, they gain a bonus equal to their maximum Willpower to that check; this represents the ‘last throw’ of a character’s will.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="getexperience">Situational Experience Bonus</h4>
+
+                        <p>Third, your character may have spent experience points to purchase a situational bonus for the duration of a scene; if this is the case, they gain this bonus to their check result. Experience points, as well as the costs and benefits associated with situational bonuses of this nature are explained in more detail later.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="whatatool">Tool Bonus</h4>
+
+                        <p>Fourth, if your character is using any applicable tool (gear, item, equipment) in attempting the task, they may gain a bonus to their check result depending on the quality and appropriateness of the tool itself. Tools, as well as the bonuses they may grant, are explained in more detail later.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="attributebonus">Attribute Bonus</h4>
+
+                        <p>Fifth, the score of whichever attribute that forms the basis for the check is added as a bonus to the check result; in the case of a ‘split check,’ half the total of both contributing attributes (rounded up) forms this bonus. For example, a character with a Mind score of 3 and a Body score of 2 would gain a bonus of +3 to the check if it were based on Mind, and a +2 if it were based on Body; if it were a Mind/Body split check, they would gain a bonus of +3 (half of Mind = 1.5, plus half of Body = 1, for a total of 2.5, rounded up to 3).</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="jobbonus">Job Bonus</h4>
+
+                        <p>Sixth, if one of your character’s Jobs applies to the task, they gain a bonus to the check result equal to the Level of the Job. If multiple Jobs apply, they do not stack; instead, only the Job with the highest Level grants a bonus to the check.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="skillbonus">Skill Bonus</h4>
+
+                        <p>Seventh, if one of your character’s Skills applies to the task, they gain a bonus to the check result equal to the Level of the Skill. If multiple Skills apply, they do not stack; instead, only the Skill with the highest Level grants a bonus to the check.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="spelllvlbonus">Spell Level Bonus</h4>
+
+                        <p>Eighth, if the the task involves casting a spell your character knows, they gain a bonus to the check result equal to the Level of the spell being cast.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="diceroll">Dice Roll</h4>
+
+                        <p>Ninth, the d20 is rolled. Whatever number comes up on the face of the d20 is added as a bonus to the check result. In addition, the d20 roll result itself may be used as the basis for other bonuses. If the dice roll comes up as a 1 or a 20, however, the rest of this process (except for a Talent-granted roll-again, below) is aborted; critical successes, critical failures, and what happens on a ‘natural’ 1 and a ‘natural’ 20 are explained in more detail later.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="rollagain">Talent Roll-Again</h4>
+
+                        <p>Tenth, if your character has a Talent which applies to the task, they repeat the d20 roll, and choose the highest of the two results to count as the bonus the dice roll grants to the check result. This ‘roll-again’ is only done once per check; multiple applicable Talents do not grant multiple re-rolls.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="specialpurposebonus">Special Purpose Bonus</h4>
+
+                        <p>Eleventh, if your character’s Special Purpose applies to the task (or if they are a Blank Flank and have chosen to use their special ability on the task), they gain a bonus to the check result equal to half the bonus granted by the d20 roll, rounded up. For example, if a 15 was rolled on the d20 and the character’s Special Purpose applies, they gain an additional +8 (half of 15 = 7.5, rounded up to 8) to the check result.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="dragonheartbonus">Dragonheart Bonus</h4>
+
+                        <p>Twelfth and finally, if your character is a dragon and has chosen to use their ‘Dragonheart’ ability to gain a bonus to tasks and checks during the scene, they gain this bonus to the check result.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="ponyplus">One Pony, Plus…</h3>
+
+                        <p>Once all of the previous steps have been followed, all of the bonuses are added together to produce the total check result. For example, a character making a check has a +3 Harmony bonus, spent a point of Willpower to gain a +5 bonus, has a +3 temporary bonus from spending experience, is using a tool granting a +2 bonus, has a +4 attribute bonus, has a +2 bonus from their Job, has a +3 bonus from a Skill, isn’t casting a spell (+0), rolled a 9 on a d20 (after being granted a roll-again by a Talent, their original roll being a 5), has a +5 from their Special Purpose (being half the d20 roll, rounded up), and isn’t a dragon (+0). Their total check result would be 36 (3 + 5 + 3 + 2 + 4 + 2 + 3 + 0 + 9 + 5 + 0).</p>
+                    </div>
+
+                    <div class="sidebar">
+                        <h4 id="fullofbuck">MY BRAIN IS FULL OF BUCK</h4>
+
+                        <p>This section is written to provide a centralized reference point for players and groups who are learning to play My Little Pony: Roleplaying is Magic. As such, it is packed with a lot of information in a very small space. If it is confusing you, don’t worry about remembering all of it; while playing, you can always refer back to this section to help you.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="welldarn">Shoot!</h3>
+
+                        <p>If the d20 roll while making a check comes up as a 1, the check is aborted (unless a Talent grants a roll-again). A ‘natural’ 1 in this way is always considered to be a failure, and more than that, a critical failure. Critical failures are when something goes so wrong that it often makes a situation worse in some way, and are explained in more detail later. Any Willpower spent is simply lost, as are any other assets which may have been consumed.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="savepoint">I’ll Save You!</h4>
+
+                        <p>The exception to this critical failure rule is that, if a Talent would grant a character who rolls a 1 a roll-again of the d20, it instead negates the critical failure. Instead of gaining the roll-again as normal, the character simply treats the d20 roll of 1 as the bonus the d20 roll is granting to the check result. While this low roll result may cause the check to fail, it is not an automatic critical failure due to the influence of the character’s Talent.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="yay">Yay!</h3>
+
+                        <p>If the d20 roll while making a check comes up as a 20, the check is also aborted (as in the case of a critical failure). However, a ‘natural’ 20 in this way is considered to be an automatic success, and more than that, a critical success. Critical successes are when things go so fortunately that it often makes the situation better in some way, and are explained in more detail later. Any Willpower spent is restored, as are any other assets which may have been consumed.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="whathappened">What Happened?</h3>
+
+                        <p>Once the total check result has been determined, it is compared to the difficulty of the task as set by the GM. If the check result is equal to or higher than the difficulty, the check—and thus the task—was successful. If the check result is lower than the difficulty, however, the task may have been a failure. Regardless of the outcome, the GM will relate the effects and events which occur as a result of the task. In addition to this general rule, however, are three special circumstances: Critical Successes, Critical Failures, and Partial Successes.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="winnitude">Critical Success</h4>
+
+                        <p>A critical success is when events have gone so fortunately as to have made the situation even better than a normal success would have. While the GM will generally come up with and relate the effects of a critical success, it is possible that they will ask for player insight and opinion in deciding on its effects. Critical successes may also be manipulated or used for other purposes, such as racial abilities and special abilities granted by character advancements.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="failitude">Critical Failure</h4>
+
+                        <p>A critical failure is the reverse of a critical success; it is when events have gone so poorly as to have made the situation worse than it was. This may take the form of narrative events, or simply mechanical effects such as a loss of extra points in some area, but the GM will determine the scope of a critical failure. There are a few ways critical failures may be avoided, through racial abilities, special abilities or tools, or other aspects of a character.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="okayitude">Partial Success</h4>
+
+                        <p>At the GM’s discretion, they may treat a failed task whose check result was reasonably close to the difficulty set, as a partial success. A partial success is when things went poorly, but not as bad as they could have gone. In general, this is used as a narrative device to avoid catastrophic failure, or to give players and their characters some direction—though each GM may use (or not use) partial successes in their own unique way to suit the game group and story.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="thispartysariot">Fighting amongst Ourselves</h3>
+
+                        <p>In the case that characters are acting against one another, the check result of the ‘aggressor’ character becomes the difficulty which the ‘defender’ character must meet or exceed to avoid the effects of the task. In terms of how the rounds of Cinematic Mode scenes are handled in this case, the GM should separate the group into general ‘factions,’ and alternate turns beginning with the ‘aggressor’ faction. For example, if a group of six characters has split in half over a dispute, and starts a fight over it, they become split into two ‘factions’ of three characters each, with the first group to take aggressive action going first. This situation is to be avoided whenever possible between friends, but it is sometimes inevitable.</p>
+                    </div>
+
+
+
+                    <div class="textbox">
+                        <h2 id="youonlyselltwothings">Quills and Sofas</h2>
+
+                        <p>Equestria is home to many objects of power and usefulness, from the humble hammer and nail, to the Elements of Harmony themselves. In My Little Pony: Roleplaying is Magic, any object a character makes use of to help them with a task is considered a ‘Tool.’ Tools can be items being used, vehicles, and even locations. Rather than make a comprehensive list of every possible tool and its bonuses, tools are judged by their level of appropriateness to the task they are being used for. Because of this, almost anything can be a tool in the right hooves and in the right situation. Like many aspects of My Little Pony: Roleplaying is Magic, the impact a potential tool has is defined by the player(s) and the GM, working together.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="justthething">I’ve Got Just the Thing</h3>
+
+                        <p>In many pen and paper roleplaying games, a list of equipment is given, along with what bonuses each item gives, and what each piece of gear does. In My Little Pony: Roleplaying is Magic, ‘tools’ are governed in nearly the reverse way. Instead of asking “what task is this tool appropriate to,” it is better to ask “how appropriate is this tool to the task at hand?” Because of this, players are free to use tools in almost any way they can imagine, using simple guidelines to determine the mechanical impact of their characters’ actions with the tool.</p>
+
+                        <p>For example, a crowbar is well-suited to prying open a door, certainly. However, it could be used for bashing open a crate, giving a little extra reach to a friend dangling from the edge of a cliff, connecting two electrical sources to complete a circuit, or any number of other uses based on the situation at hand and the imagination of the player and their character’s ingenuity. This versatility extends to most (if not all) tools, and makes them just as useful as the character wielding them.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="inthedress">Magic in the Dress</h3>
+
+                        <p>When a tool is used as part of a task, the player and the GM should work together to decide how appropriate the tool is to the task, in the way it is being used by the character. The task and the method of use are equally important when deciding this appropriateness; a character with an effective tool who uses it in an ineffective way is likely to receive less of a bonus from the tool itself. The appropriateness of the tool in use falls into one of four categories, each one granting a different bonus to the task’s check result: <em>Useless</em> grants no bonus, <em>Makeshift</em> grants a +1 bonus, <em>Appropriate</em> grants a +2 bonus, and <em>Superior</em> grants a +4 bonus. Each category is explained in more detail in this section.</p>
+                    </div>
+
+                    <div class="sidebar">
+                        <h5 id="sososo">It’s so Simple, so Practical; so—Me!</h5>
+
+                        <p>Tools can certainly be crafted by characters, but it is important to note that quality doesn’t necessarily play as large a role in Tools in My Little Pony: Roleplaying is Magic as it does in other pen and paper roleplaying games—what is most important is the appropriateness of the Tool to the task at hand. Thus, while an opulent dress might help a character impress the Canterlot elite, a simpler and more practical dress might help the character feel more comfortable around them in the first place, which might in turn lead to the same end result.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="useful">Useless</h4>
+
+                        <p>A useless tool grants no bonus, as it is not appropriate to the task in general, or at least not in the way it is being used by the character. Examples of useless tools include trying to use a slice of cake to climb a cliff face, using a chair to sew, or drinking hot sauce to quench thirst. Typically, it is evident when a tool is useless for the task at hand, and useless tools can actually make a task harder to accomplish; the GM may, at their discretion, interpret the task as being more difficult than normal if a character is trying to use a useless tool as part of the task attempt. This is explained in more detail later in this section.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="makeshift">Makeshift</h4>
+
+                        <p>A makeshift tool grants a +1 bonus to the task, as it has some limited effectiveness in the way it is being used by the character as an improvised version of a more appropriate tool. Examples of makeshift tools include trying to use a wooden board as a baseball bat to hit a ball, using a jar of fireflies as a flashlight to see in the dark, or breathing through a wet cloth instead of using a gas mask. Typically, a tool is considered to be makeshift when it is being used to emulate the standard or ‘common-sense’ standard tool for the task; this is the general ‘using X as an improvised Y’ logic behind makeshift tools.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="appropriate">Appropriate</h4>
+
+                        <p>An appropriate tool grants a +2 bonus to the task, as it is well-suited to the task at hand, and may be the standard tool designed to be used for the task in the first place—though anything which is particularly well-suited to the task may be considered appropriate. Examples of appropriate tools include using binoculars (or a telescope, or a spyglass) to see into the distance, using armor to resist a wound being inflicted, or using a map (or compass) to navigate to a destination. Typically, a tool is considered appropriate when it easily comes to mind as the tool one would ideally use for the task.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="fasterstronger">Superior</h4>
+
+                        <p>A superior tool grants a +4 bonus to the task, as it is not only well-suited to the task at hand, but is designed or empowered to facilitate the task beyond what an appropriate tool would normally be designed for. Examples of superior tools include an ancient book of spells designed to aid the casting of certain spells, an oven which not only cooks food but also is designed to automatically prevent it from burning, or a camouflage cape which is enchanted to grant its wearer semi-invisibility as well as its normal camouflage. Typically, superior tools are rare; in traditional pen and paper roleplaying games, they would usually be considered ‘magic items’ or ‘artifacts.’</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="setscostumes">Sets and Costumes</h3>
+
+                        <p>Apart from their general level of appropriateness to the task at hand, tools are also separated into five distinct types, to allow their effects to ‘stack’ with each other: <em>Items</em>, <em>Devices</em>, <em>Equipment</em>, <em>Vehicles</em>, and <em>Locations</em>. This reflects that multiple tools of different types can work in combination with each other to produce even greater effects and higher bonuses. For example, using a baseball bat to knock a smoke bomb back at the person who threw it can be made easier if the character with the bat also has special glasses which let them aim their swing better. In general, the rule stands that only one tool of each of the five types can apply to the task at hand; for example, a Device and a Vehicle can both apply, but if two Devices are used, only the one which is most appropriate applies.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="items">Items</h4>
+
+                        <p>Items might also be called ‘consumables,’ or ‘single-use’ tools. In general, they are anything which is exhausted or used up by the task they are being used for. Examples of Items might include food or drinks, smoke bombs, fireworks, torches, potions, or medicine.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="devices">Devices</h4>
+
+                        <p>Devices might also be called ‘held items’ or ‘kits.’ In general, they are anything wielded by the character actively, requiring overt action or concentrated effort to utilize, which may be used multiple times or indefinitely. Examples of Devices might include weapons, flashlights, metal detectors, books, toys, or power tools.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="equipment">Equipment</h4>
+
+                        <p>Equipment might also be called ‘gear’ or ‘worn items.’ In general, they are anything worn or carried by the character passively, not requiring much (if any) overt action or concentrated effort to utilize, except in the case that they must be focused on or deliberately activated. Examples of Equipment might include armor, magical necklaces, cloaks, gas masks, backpacks or saddlebags, sunglasses, or goggles.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="vehicle">Vehicles</h4>
+
+                        <p>Vehicles might also be called ‘piloted objects.’ In general, they are anything the character is harnessed into or gets into and may pilot or use for its own external capabilities. Examples of Vehicles might include wagons, carriages, hang gliders, gyrocopters, jet packs, scooters, hot air balloons, or ice skates.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="location">Locations</h4>
+
+                        <p>Locations might also be called ‘beneficial areas’ or ‘purpose-specific areas.’ In general, they are anywhere the character might find tools which are conducive to the task at hand, or anywhere which is designed to aid in the task in and of itself. Examples of Locations might include libraries (for research), bakeries (for cooking), performance stages (for theater productions), thick bushes (for sneaking), or magical sites (for spellcasting).</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="bakedbads">Not Baked Goods; Baked Bads!</h3>
+
+                        <p>As discussed earlier, sometimes, a particular tool which is useless to the task might make that task harder to accomplish. This does not take the form of a penalty to the task’s check result—My Little Pony: Roleplaying is Magic has no penalties (or ‘negative modifiers’) implemented into check results—but may take the form of the GM increasing the difficulty of the task, and thus the required check result to complete the task successfully.</p>
+
+                        <p>As a general rule, the GM should apply an increase to the task difficulty equal to how appropriate the ‘useless’ tool would be at impeding the task (or working against it), instead of facilitating it. For example, a character who is trying to sneak through a wide-open, well-lit field, has a useless Location tool. The GM may determine that the field is acting as an appropriate Location tool to anyone who might detect the sneaking character. Because ‘appropriate’ adds a +2, in this case, it adds a +2 to the tasks’ difficulty, instead of the character’s check result. In this situation, the Location is working against the character, making it harder for them to sneak. Likewise, if they were riding a noisy Vehicle and trying to sneak, or wearing brightly-colored clothing which stands out, the GM might add the appropriate ‘bonuses’ to the task’s difficulty. For this reason, characters should be aware of their situation before attempting a task—as tools can work against them.</p>
+                    </div>
+
+
+
+                    <div class="textbox">
+                        <h2 id="dischord">Confusion! Evil! Chaos!</h2>
+
+                        <p>As wondrous and magical as the land of Equestria is, the fact of the matter is that it is also fraught with danger, hardship, and fearsome challenges. From thunderstorms and dangerous forests, to fearsome creatures like Windigos and Timber Wolves, to maladies such as Cutie Pox, to ancient foes like the villainous Discord, Equestria is certainly not a place for the unprepared. In My Little Pony: Roleplaying is Magic, as characters adventure, they are sure to run into hardships which will test their mettle and push them to their limits. This is reflected in their Secondary Attributes of Energy, Courage, and Fortitude, which serve as the primary measure of how well, and for how long, a character can withstand difficult or dangerous situations before succumbing to them.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="justdoit">We can do it!</h3>
+
+                        <p>As explained during character creation, Energy, Courage, and Fortitude represent a character’s ability to resist harm. Energy represents a character’s resistance to fatigue, Courage represents a character’s resistance to intimidation, and Fortitude represents a character’s resistance to injury. In traditional pen and paper roleplaying games, these three make up what would be considered the ‘hit point’ system found in the game—in other words, the character’s ability to continue to face a difficult or dangerous situation.</p>
+
+                        <p>However, where most games deal primarily with threats to a character’s health or life, characters in Equestria are more dynamic and sensitive to their world. For example, where a character in a traditional pen and paper roleplaying game might only fail in an encounter with a dangerous situation by losing their life to it, a character in Equestria might fail due to succumbing to their fear of the situation. It is because of these added dimensions that a character’s ability to face a dangerous or difficult situation is kept track of with three measurements, instead of only one.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="neverlikedus">They Have Never Liked Us</h3>
+
+                        <p>In the situation of impending harm being done to a character, they are typically afforded a Reactive Action to attempt to defend against it or avoid it. While this is not always the case, it is the norm. However, should a character fail in their defense, they will undoubtedly lose Energy, Courage, or Fortitude as a result; the only question remaining is how much, or how little, they will lose. To determine this, they must make a resistance check.</p>
+
+                        <p>A resistance check is a special kind of check. It is performed exactly like a normal check, except that in place of the bonus the check’s Primary Attribute would normally grant to the result, the character gains a bonus to their check result equal to whichever Secondary Attribute is being diminished through harm (Energy, Courage, or Fortitude). In effect, the check is based on the Secondary Attribute, not a Primary Attribute.</p>
+
+                        <p>To determine how other bonuses may or may not apply to the check (such as what Skills, if any, apply), the player should come up with a basic rationale for how their character is resisting the harm they have been subjected to. This can be as simple as something like “bracing for impact” against physical harm, or as advanced as “remembering that my friends would never leave me” against intimidation or fear.</p>
+
+                        <p>In general, the check is set against a difficulty set by the GM based on the severity of the incoming harm. If the character succeeds at the resistance check, they lose only one point from the Secondary Attribute being affected (the GM may instead allow them to lose zero points, if the harm was particularly weak or if the character had a good enough rationale for their defense). If the character fails at the resistance check, however, they will almost certainly lose more than one point, depending on how severe the GM has decided the harm is; for example, a character falling out of a tree may lose a point or two of Fortitude, where a character caught in the fire breath of a dragon might lose much more.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="intimidate">Intimidation</h4>
+
+                        <p>Whenever a character is exposed to mental harm stemming from fear, terror, cruelty, verbal abuse, or another form of loss of confidence, they lose points of Courage. This form of harm is covered by the broad category of “Intimidation.” Examples of Intimidation may include the roar of a dragon, being surrounded by Timber Wolves, being taunted by classmates, waking up to the smell of smoke, or being publicly humiliated.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="fatigue">Fatigue</h4>
+
+                        <p>Whenever a character is exposed to physical or mental harm stemming from exhaustion, starvation, thirst, over-exertion, or another form of drain, they lose points of Energy. This form of harm is covered by the broad category of “Fatigue.” Examples of Fatigue may include staying up all night, going all day without something to eat, trying to do too much work without taking a rest, running for long periods of time, or being exposed to a Cockatrice’s petrifying gaze.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="injury">Injury</h4>
+
+                        <p>Whenever a character is exposed to physical harm stemming from wounds, burns, discomfort, illness, poison, or another form of damage, they lose points of Fortitude. This form of harm is covered by the broad category of “Injury.” Examples of Injury may include stepping on hot coals, falling off of a roof, eating spoiled food, being stung by insects, or having an anvil dropped on your head.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="icannt">I Just… Can’t</h3>
+
+                        <p>Characters are generally okay as long as they have at least one point of each Secondary Attribute remaining; while they may be terribly frightened, for example, they are still able to muster the courage to continue to face the situation at hand. While they might be bruised and battered and tired, they are still able to muster the energy, and the fortitude, to stand up for their friends. It is when a character runs out of a Secondary Attribute that things take a turn for the worst.</p>
+
+                        <p>When a character runs out of a Secondary Attribute, they become ‘sidelined,’ or temporarily defeated. Even then, things are not as bad as they could be; characters have a few ways to recover. It is when every character in a group has been sidelined, that the group is defeated and the game may be over.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="sidelined">Becoming Sidelined</h4>
+
+                        <p>When a character runs out of a Secondary Attribute, it is reduced to zero—even if it would be reduced to negative numbers by pure mathematics. At zero in a Secondary Attribute, they become ‘sidelined,’ or temporarily defeated. They immediately lose their action for the round, even if they have their missing points recovered in one way or another. In addition, until they restore points to being at at least one point per Secondary Attribute, the only action they may take in each round is to use their Second Wind if they have not done so already this scene, though other characters may aid them in their recovery instead (recovery is explained in more detail later in this section). Effectively, a sidelined character is ‘out of the action,’ so to speak.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="tpk">Group Defeat</h4>
+
+                        <p>If, at any time, all members of the group have become sidelined, and cannot restore themselves to action, then the group has been defeated. What defeat means, and how it is handled, is dependent upon the scene itself, the tone and setting of your group’s game, and the GM’s discretion in regards to the situation at hand. It may be the end of the game, or simply a change in the direction of the plot.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="nofail">We Must Not Fail</h3>
+
+                        <p>Recovery of lost Secondary Attribute points can be handled in a number of different ways, though each is dependent upon the story and the roleplaying of the characters. There are two methods for handling recovery during the ‘action’ of a Cinematic Mode scene, and one method for use during Narrative Mode scenes, as well as a rule for recovery in the transition between the two game modes.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="secondwind">Getting a Second Wind</h4>
+
+                        <p>Once per Cinematic Mode scene, each character may use their ‘second wind’ to recover from being sidelined. A second wind represents the welling up within a character of the strength of mind, will, or body, to ‘get back into the action,’ so to speak. A character’s second wind must be justified by their reaction to the action taking place; that is, they must have a reason to want to get back into the action—though this can be as simple as acting out of care for their friends.</p>
+
+                        <p>When a character uses their second wind, they choose the Secondary Attribute which has been diminished to zero, and restore a number of points to it equal to their score in the lower of the two Primary Attributes which determines its maximum score. For example, a character using their second wind to restore their Courage regains a number of points equal to their Mind or Heart score, whichever is lower. The exception to this, as noted in the Guiding Element of Harmony section of character creation, is that—depending upon the character’s chosen element—they may instead be entitled to use the higher Primary Attribute, instead of the lower.</p>
+
+                        <p>Two special rules surround the second wind, based on special circumstances: If the Secondary Attribute being restored is Willpower, the character simply regains two points of Willpower, instead of basing anything on a Primary Attribute. If more than one Secondary Attribute is at zero, the player chooses one to be restored normally, and the others are raised to one point.</p>
+
+                        <p>For example, a sidelined character uses their second wind. They have been reduced to zero Fortitude, as well as to zero Willpower. The character may choose to focus on Willpower, which will raise it to two points and raise Fortitude to one. Or they may choose to focus on Fortitude, which will raise it to the lower of their Body or Heart scores (or the higher, if they have the appropriate Guiding Element of Harmony) and raise Willpower to one point. However, once they have used this second wind, they may not use it again for the duration of the scene.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="faithinfriends">Restoring Faith in Friends</h4>
+
+                        <p>In Cinematic Mode, a character may also encourage their friends, restoring their friends’ lost Secondary Attributes at the expense of their own Willpower. By encouraging a sidelined friend to get back into the action, and spending a point of Willpower, a character may grant that friend the effects of a second wind, which does not count against the friend’s limit of one per scene. The difference in this, however, is that the friend’s second wind is not subject to their own Guiding Element of Harmony, but rather to the character’s who is encouraging them, for the purposes of determining whether to use the higher or lower of a Secondary Attribute’s two contributing Primary Attributes.</p>
+
+                        <p>For example, a character spends a point of Willpower and encourages a friend who is sidelined. The friend immediately gains the effects of a second wind, but when deciding if they may use the higher or lower of two Primary Attributes for restoring their points, they use the encouraging character’s Guiding Element of Harmony instead of their own.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="worksout">When Everything Works Out</h4>
+
+                        <p>At the successful conclusion of a Cinematic Mode (‘action sequence’) scene, any characters who have been sidelined are restored to the minimum number of points necessary to allow them to take actions again. For example, a character who had been reduced to zero Energy and Courage is restored to one point in both. This is to allow the action of the game and story to move forward without having to wait for the most basic recovery to take place.</p>
+                    </div>
+
+                    <div class="textbox">
+                        <h4 id="sunshine">Proper Care and Sunshine</h4>
+
+                        <p>In Narrative Mode, it becomes easy to restore lost Secondary Attribute points by taking the appropriate actions. For each appropriate action taken, a character restores all of their lost Secondary Attribute points in the corresponding category. For example, a character who attends (or throws) a party with their friends, might restore all of their lost Courage—likewise, a character who spends time with their family and loved ones might as well. A character who gets a good night’s sleep, or goes to a spa, might restore all of their lost Energy. A character who visits the doctor, or otherwise gets proper medical care, might restore all of their lost Fortitude. And so on.</p>
+
+                        <p>The exception to this rule is Willpower. Willpower is only restored one point at a time, through embodying a character’s Guiding Element of Harmony, or all at once at the conclusion of an Episode. This reflects that, as powerful as Willpower can be, it can take time to rebuild.</p>
+                    </div>
+
+                    <div class="sidebar">
+                        <h4 id="fadeout">Fade to Pink</h4>
+
+                        <p>During an Episode which takes place over several days ‘in-world,’ it can sometimes be important to keep track of a character’s Energy, Courage, and Fortitude from day to day. For example, a character who is kept up all night couldn’t restore their Energy by getting a good night’s sleep. However, once an Episode is complete, a character generally restores all of their lost Secondary Attribute points.</p>
+                    </div>
+
+
+                    <div class="textbox">
+                        <h3 id="pppoe">Perplexing Pony Plagues</h3>
+
+                        <p>Some dangers exist in Equestria which are not easily covered through the standard method of utilizing Secondary Attribute adjustments. For example, while an illness could easily be handled through Fortitude for its damage to a character’s health, it is less clear when it will have run its course; and in the case of Love Poison, Cutie Pox, or Poison Joke, which have exotic and magical effects, Fortitude may not be an appropriate way to handle them. In most of these cases, the GM should make the call on how to handle the situation; and if not, then certainly house rules should prevail.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="nav" id="col-r">
+                    <h3>Navigation</h3>
+                    <div style="margin: 3px 0 0" class="center">
+                        <a href="#top">top</a>
+                    </div>
+
+                    <div style="margin: 3px 30px 3px">
+                        <a class="float-left jquery_ajax_link" href="chap_03_22.html">&lt; prev</a>
+                        <a class="float-right jquery_ajax_link" href="chap_03_24.html">next &gt;</a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="center">
+                        <a href="#bottom">bottom</a>
+                    </div>
+                    <div class="col-r-header-space"></div>
+
+
+                    <h3>Bookmarks</h3>
+                    <a class="jquery_ajax_link" href="index.html">Cover</a>
+                    <a class="jquery_ajax_link" href="chap_01.html">Publication Info</a>
+                    <a class="jquery_ajax_link" href="chap_02.html">Dedications</a>
+                    <a class="jquery_ajax_link" href="chap_03_10.html">Introduction</a>
+                    <a class="ne jquery_ajax_link" href="chap_03_20.html">For Players</a>
+
+                    <a class="indent_1 jquery_ajax_link" href="chap_03_21.html">The Magic of Friendship</a>
+                    <a class="indent_1 jquery_ajax_link" href="chap_03_22.html">CMC Character Creators!</a>
+                    <a class="indent_1 ne jquery_ajax_link" href="chap_03_23.html">World of Equestria</a>
+                    <a class="indent_1 jquery_ajax_link" href="chap_03_24.html">Spike, Take a Letter</a>
+
+                    <a class="jquery_ajax_link" href="chap_03_30.html">For GMs</a>
+                    <a class="jquery_ajax_link" href="chap_04.html">Thanks for Reading!</a>
+                    <div class="col-r-header-space"></div>
+                    
+                    <h3>Credits</h3>
+                    <ul>
+                        <li><a href="http://www.exljbris.com/delicious.html">Delicious font</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-clear"></div>
+            </div>
+            
+            <div id="footer">
+                © Roan Arts - Powered by <a href="https://github.com/Danneh/ConDescend">ConDescend</a>
+            </div>
+
+            <a class="name" name="bottom"></a>
+        </div>
+    </body>
+</html>

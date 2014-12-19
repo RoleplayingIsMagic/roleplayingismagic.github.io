@@ -1,0 +1,30 @@
+---
+layout: default
+title: About
+rootdir: .
+---
+
+<div class="block about">
+    <img class="title" src="cl/img/titles/about.svg">
+    <img class="icon" src="cl/img/icons/about.svg">
+    <div>
+        <p>The Roleplaying is Magic team is composed of five individuals—one woman, four men—and is published under the company header of Roan Arts LLC. Roan Arts LLC is a small company formed to create and publish artistic projects from video games, to hobby games, to books and comics. Apart from Roleplaying is Magic, Roan Arts LLC is developing <strong>START</strong>, a universal framework system for pen and paper game development, <strong>Mass Effect: Freelancer</strong>, a pen and paper RPG set in the Mass Effect universe, and <strong>SILVER</strong>, a hybrid freeform RPG system for roleplaying guilds in MMO’s which is being deployed for Guild Wars 2.</p>
+
+        <div class="seperate parent_bg"></div>
+
+        {% for member in site.data.team %}
+        <h2>{{ member.avatar }} <span class="author parent_text">{{ member.name }}
+            {% if member.homepage %} <a href="{{ member.homepage }}" title="{{member.avatar}}'s homepage" class="icon-window"></a>{% endif %}
+            {% if member.email %} <a href="mailto:{{ member.email }}" title="Send an email to {{member.avatar}}!" class="icon-mail"></a>{% endif %}
+            {% if member.twitter %} <a href="http://twitter.com/{{ member.twitter }}" title="{{member.avatar}}'s Twitter" class="icon-twitter"></a>{% endif %}
+            {% if member.tumblr %} <a href="http://{{ member.twitter }}.tumblr.com" title="{{member.avatar}}'s Tumblr" class="icon-tumblr"></a>{% endif %}
+            {% if member.github %} <a href="http://github.com/{{ member.github }}" title="{{member.avatar}}'s Github" class="icon-github"></a>{% endif %}
+        </span></h2>
+        <p>{{ member.name }} {{ member.bio }}</p>
+        {% endfor %}
+
+        <div class="seperate parent_bg"></div>
+
+        <img class="fullpage" src="{{ page.rootdir }}/cl/img/crew.jpg" />
+    </div>
+</div>

@@ -1,0 +1,432 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import compass
+@import defs
+
+// vars
+.rules, .s4e
+    background: $rim_green
+.news, .news .parent_bg, .about, .about .parent_bg, .s1e
+    background: $rim_pink
+.news .parent_color, .about .parent_text
+    // color: darken($rim_pink, 15)
+    color: darken($rim_blue, 24)
+.forum, .dice, .s2e
+    background: $rim_blue
+.archive
+    background: $rim_brown
+.s3e
+    background: $rim_orange
+
+// layout
+html, body
+    min-height: 100%
+    line-height: 1.4
+
+body
+    @include background(radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4) 120%) no-repeat fixed center, url("../img/backgrounds/standard.svg") no-repeat fixed center)
+    background-size: cover  // Apparently Chrome's 'cover' option dies without above junk, gg Chrome
+    &.bg-twitter
+        @include background(radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4) 120%) no-repeat fixed center, url("../img/backgrounds/twitter.png") repeat fixed center)
+        background-size: auto auto
+    font-family: $standard-font-family
+
+#container
+    max-width: 60rem
+    margin: 0 auto 2rem
+    padding: 0 1rem
+.logo img
+    max-width: 100%
+    display: block
+    margin: 3rem auto
+    @include filter($standard-drop-shadow)
+
+.block
+    &[onclick]
+        cursor: pointer
+    margin: 1rem 2rem 2rem 0
+    padding: 1.3rem 1rem 1rem
+    @include filter($standard-drop-shadow)
+    border-radius: 1rem
+    @include respond-to(mobile)
+        margin-right: 0
+    & + .block
+        margin-top: 3.6rem
+    & > div
+        padding: 0.7rem 0.8rem 0.7rem 0.8rem
+        border-radius: 0.6rem
+        background: #fff
+    & > .title
+        float: left
+        margin-left: -2rem
+        @include respond-to(desktop)
+            margin-top: -6.3rem
+        @include respond-to(mobile)
+            margin-top: -5rem
+            height: 5rem
+    & > .icon
+        @include respond-to(mobile)
+            display: none
+        float: right
+        margin: -6rem -4rem 0 0
+    & a
+        cursor: pointer
+        text-decoration: none
+        color: rgba(88,24,184,0.85)
+        font-style: italic
+        &:hover
+            color: darken(rgba(88,24,184,0.85), 13%)
+
+#footer
+    font-size: 0.75rem
+    color: rgba(240,240,240,0.85)
+    font-family: $small-font-family
+    @include filter($standard-drop-shadow)
+    line-height: 1.7
+    @include respond-to(mobile)
+        text-align: center
+    & a
+        cursor: pointer
+        text-decoration: none
+        color: rgba(88,24,184,0.85)
+        font-style: italic
+        &:hover
+            color: darken(rgba(88,24,184,0.85), 13%)
+
+.signature
+    font-style: italic
+    color: darken(rgba(88,24,184,0.85), 13%)
+
+h2
+    font-family: "Kaushan Script", $standard-font-family
+    margin-top: 1rem
+    margin-bottom: 0.2rem
+    font-size: 2rem
+    @include respond-to(mobile)
+        font-size: 1.8rem
+    &:first-child
+        margin-top: 0
+    .author
+        display: inline-block
+        margin-left: 0.45rem
+        font-family: $standard-font-family
+        font-size: 0.9rem
+        font-weight: bold
+        position: relative
+        bottom: -0.08rem
+    .date
+        font-size: 1rem
+        margin-left: 1rem
+
+.fullpage  // making a fullpage whatever
+    max-width: 100%
+    border-radius: 0.5rem
+
+.dice-holder, .die-adder, .die-history
+    text-align: center
+    min-height: 5rem
+
+.die-sep
+    margin: 1rem auto
+    height: 0.3rem
+    max-width: 10rem
+    background: lighten($rim_blue, 20%)
+    border-radius: 0.6rem
+
+.die
+    cursor: pointer
+
+.die, .display-die
+    display: inline-block
+    font-size: 2rem
+    background: #ddd
+    margin: 1rem 0.6rem
+    &.die-d-6
+        border: 3px #d3d3d3 solid
+    &.die-d-20
+        margin-top: 1rem
+        width: 4rem
+        text-align: center
+        position: relative
+        &:before
+            content: " "
+            width: 0
+            height: 0
+            border-bottom: 1rem solid #ddd
+            border-left: 2rem solid transparent
+            border-right: 2rem solid transparent
+            position: absolute
+            top: -1rem
+            left: -0rem
+        &:after
+            content: " "
+            width: 0
+            height: 0
+            border-top: 1rem solid #ddd
+            border-left: 2rem solid transparent
+            border-right: 2rem solid transparent
+            position: absolute
+            bottom: -1rem
+            left: -0rem
+
+.die-d-6
+    padding: 0.4rem 1.2rem
+    border-radius: 0.6rem
+
+
+.die-add, .die-remove
+    cursor: pointer
+    display: inline-block
+    font-size: 2rem
+    margin: 0.6rem
+    padding: 0.4rem 1.2rem
+
+
+.seperate  // to separate content, like a <hr>
+    display: block
+    width: 5rem
+    height: 0.4rem
+    margin: 2.5rem auto
+    border-radius: 0.2rem
+
+// S4E Web Edition Rules
+//
+
+// vars
+.block-color-green
+    background: $rim_green
+.block-color-blue
+    background: $rim_blue
+.block-color-darkblue
+    background: $rim_darkblue
+.block-color-pink
+    background: $rim_pink
+.block-color-purple
+    background: $rim_purple
+.block-color-orange
+    background: $rim_orange
+
+// specific layout
+.s4e-rules #header
+    @include respond-to(desktop)
+        display: flex
+
+.s4e-logo
+    margin: 3rem 1rem 0
+    vertical-align: middle
+    img
+        height: 7rem
+        max-height: 100%
+        max-width: 100%
+        display: block
+        @include filter($standard-drop-shadow)
+        @include respond-to(mobile)
+            margin: 0 auto
+
+.s4e-edition-logo
+    // flexes to autofill header
+    margin: 2rem 1rem 1rem
+    vertical-align: middle
+    @include respond-to(mobile)
+        margin-top: 1rem
+    img
+        width: 35rem
+        max-width: 100%
+        display: block
+        margin: 3rem 1rem 2rem auto
+        @include filter($standard-drop-shadow)
+        @include respond-to(mobile)
+            margin: 0 auto
+
+body.s4e-rules
+    background: url("../img/backgrounds/standard.svg") no-repeat fixed center  // fixes lag, a lot
+    background-size: cover
+    #bg-wrapper
+        position: fixed
+        z-index: -9999
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        background: url("../img/backgrounds/gradient.png") repeat-y center
+    .block
+        margin-right: 0
+
+    .toc-popup
+        display: none
+
+        &.show
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(20,20,20,0.7)
+            z-index: 9999
+            > div
+                text-align: center
+                position: relative
+                overflow-y: scroll
+                margin: 2rem auto
+                width: 70%
+                max-height: 80%
+                padding: 1.5rem
+                background: #fff
+                border-radius: 0.2rem
+                border: 1px rgba(10,10,10,0.9) solid
+                h1
+                    font-family: "Kaushan Script", $standard-font-family
+                    font-size: 2rem
+                a
+                    margin-top: 1rem
+                    display: block
+                    cursor: pointer
+                    text-decoration: none
+                    font-style: italic
+                    
+                    color: darken(rgba(88,24,184,0.85), 11%)
+                    &:hover
+                        color: darken(rgba(88,24,184,0.85), 13%)
+                    
+                    &.toc_part
+                        font-weight: bold
+                        color: rgba(88,24,184,0.85)
+                        &:hover
+                            color: darken(rgba(88,24,184,0.85), 13%)
+
+                .toc_part
+                    font-size: 1.6rem
+                .toc_section
+                    font-size: 1.3rem
+                .toc_subsection
+                    font-size: 1rem
+
+    ul
+        margin: 0.7rem 0 1.3rem 1.3rem
+        + ul
+            margin-top: 1.3rem
+        padding: 0
+
+        > li
+            margin-top: 0.3rem
+            padding-left: 0.5rem
+            border-left: 2px solid #bbb
+        &.with_header
+            > li
+                &:first-child
+                    border-left: none
+                    margin-left: -1.3rem
+                    margin-bottom: 0.8rem
+
+    ol
+        list-style-type: none
+
+        margin: 1.8rem 0 1.8rem 3rem
+        padding: 0
+         
+        counter-reset: li-counter
+
+        > li
+            position: relative
+            margin-bottom: 1.25rem
+            padding-left: 0.5rem
+            min-height: 1.75rem
+            border-left: 2px solid #bbb
+            &:before
+                position: absolute
+                top: 0.13rem
+                left: -2.2rem
+                width: 0.8rem
+                 
+                font-size: 1.5rem
+                line-height: 1
+                font-weight: bold
+                text-align: right
+                color: #464646
+             
+                content: counter(li-counter)
+                counter-increment: li-counter
+
+.nav-container
+    display: inline-block
+.navlinks
+    width: 100%
+    text-align: center
+    + .navlinks
+        margin-top: 1rem
+    &:first-of-type
+        .toc a
+            color: #358
+            &:hover
+                color: #223
+    &:last-of-type
+        margin-bottom: 2rem
+        .toc a
+            color: darken(#358, 14%)
+            &:hover
+                color: #223
+    a
+        text-decoration: none
+    .toc
+        @include respond-to(desktop)
+            display: inline-block
+        @include respond-to(mobile)
+            display: block
+        a
+            display: block
+            font-style: italic
+            transition: color 60ms ease-in
+        &:first-of-type
+            padding-right: 2rem
+            @include respond-to(mobile)
+                padding: 0 1.5rem 1rem
+        &:last-of-type
+            padding-left: 2rem
+            @include respond-to(mobile)
+                padding: 1rem 1.5rem 0
+
+    a.nav
+        margin: 0
+        padding: 0.5rem 1rem
+        &.disabled
+            color: $rim_darkgrey
+            opacity: 0.6
+        &.enabled
+            color: $rim_darkblue
+            transition: background-color 60ms ease-in
+            &:hover
+                background-color: darken($rim_grey, 3%)
+        background-color: $rim_grey
+        &:first-of-type
+            border-top-left-radius: 0.4rem
+            border-bottom-left-radius: 0.4rem
+            padding-left: 1.5rem
+        &:last-of-type
+            border-top-right-radius: 0.4rem
+            border-bottom-right-radius: 0.4rem
+            padding-right: 1.5rem
+        + a.nav
+            margin-left: 1px
+
+.part-header
+    display: block
+    margin: 0 auto 0.5rem
+    border-radius: 0.4rem
+    max-width: 100%
+
+.sidebar
+    background-color: lighten($rim_pink, 6%)
+    @include box-shadow(0 0 0 1px lighten($rim_purple, 6%), inset 0 0 0 1px #fff, inset 0 0 10rem 0 lighten($rim_pink, 2%))
+    border-radius: 0.3rem
+    padding: 1rem
+    margin-top: 1rem
+    margin-bottom: 1rem
+    h3
+        margin-top: 0
+        margin-bottom: 0

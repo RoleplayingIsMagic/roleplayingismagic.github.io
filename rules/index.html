@@ -1,0 +1,42 @@
+---
+layout: default
+title: Rules
+rootdir: ..
+---
+{% if site.s4e %}
+<div class="block s4e">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/s4e.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/s4e.svg">
+    <div>
+        <p>Roleplaying is Magic, Season Four Edition was our biggest and best, released as a <a href="s4e/web/index.html" >Web Edition</a>, along with a printable <a href="s4e/web/cl/S4E Character Sheet.pdf" >Character Sheet</a></p>
+    </div>
+</div>
+{% endif %}{% if site.s3e %}
+<div class="block s3e">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/s3e.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/s3e.svg">
+    <div>
+        <p>Edition Three of Roleplaying is Magic brings {% if site.s3e_pdf %}a <a href="s3e/s3e.pdf" >high-quality PDF</a>,{% endif %} a printable <a href="s3e/character sheet.pdf" >Character Sheet</a>, and a <a href="s3e/gm screen.pdf" >GM Screen</a>.</p>
+
+        <p>We also have the <a href="s3e/web/index.html" >S3E Web Edition</a>, perfect for browsing on your computer or mobile device</p>
+    </div>
+</div>
+{% endif %}{% if site.s2e %}
+<div class="block s2e">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/s2e.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/s2e.svg">
+    <div>
+        <p>The second edition of Roleplaying is Magic, we have {% if site.s2e_pdf %}a <a href="s2e/s2e.pdf" >high-quality PDF</a> and{% endif %} an <a href="s2e/s2e.epub" >ePub version</a>, along with printable <a href="s2e/character sheets.pdf" >Character Sheets</a>.</p>
+
+        <p>We also have the <a href="s2e/web/index.html" >S2E Web Edition</a>, perfect for browsing on your computer or mobile device</p>
+    </div>
+</div>
+{% endif %}{% if site.s1e %}
+<div class="block s1e">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/s1e.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/s1e.svg">
+    <div>
+        <p>Season One, where it all started. <a href="s1e/s1e.pdf" >Here's the original, high-quality PDF</a></p>
+    </div>
+</div>
+{% endif %}

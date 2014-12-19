@@ -1,0 +1,37 @@
+---
+layout: default
+title: Dice Roller
+rootdir: .
+---
+
+<script type="text/javascript" src="{{ page.rootdir }}/cl/js/uheprng.js"></script>
+
+<div class="block dice">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/dice.svg">
+    <!-- <img class="icon" src="{{ page.rootdir }}/cl/img/icons/dice.svg"> -->
+    <div>
+    	<script src="{{ page.rootdir }}/cl/js/uheprng.js" type="text/javascript"></script>
+    	<script src="{{ page.rootdir }}/cl/js/dice.js" type="text/javascript"></script>
+
+        <div class="dice-holder">
+        	<div class="message">Click dice to roll!</div><div class="die die-d-6" title="Re-roll!">6</div>
+        </div>
+        <div class="die-sep"></div>
+        <div class="dice-adder">
+        	<div class="die-adder">
+        		<div class="display-die die-d-6">6</div>
+        		<div class="die-remove die-d-6">-</div>
+        		<div class="die-add die-d-6">+</div>
+        	</div>
+        	<div class="die-adder">
+        		<div class="display-die die-d-20">20</div>
+        		<div class="die-remove die-d-20">-</div>
+        		<div class="die-add die-d-20">+</div>
+        	</div>
+        </div>
+        <h2>Roll History</h2>
+        <div class="die-history">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+/* transparent images */
+body {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/../img/bg.png', sizingMethod='scale');
+}
+#col-r {
+    background-image: none;
+}
+
+/* sidebar positioning */
+#col-r {
+    top:0px;
+    left:-3px;
+}

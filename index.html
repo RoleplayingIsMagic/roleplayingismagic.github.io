@@ -1,0 +1,33 @@
+---
+layout: default
+title: Index
+rootdir: .
+---
+{% if site.rules %}{% if site.s4e or site.s3e or site.s2e or site.s1e %}
+<div class="block rules" onclick="location.href='{{ page.rootdir }}/rules/index.html';">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/rules.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/rules.svg">
+    <div>Here be the rules for Roleplaying is Magic. Contained within are web, PDF, and printed book versions of every edition for your reading pleasure!</div>
+</div>
+{% endif %}{% endif %}{% if site.utilities and site.dice_roller %}
+<div class="block dice" onclick="location.href='{{ page.rootdir }}/dice.html';">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/dice.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/dice.svg">
+    <div>A nice dice roller for you and your friends!</div>
+</div>
+{% endif %}
+<div class="block about" onclick="location.href='{{ page.rootdir }}/about.html';">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/about.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/about.svg">
+    <div>The story and team behind Roleplaying is Magic!</div>
+</div>
+<!-- <div class="block forum" onclick="location.href='http://mlprim.com/forum';">
+    <img class="title" src="{{ page.rootdir }}/cl/img/titles/forum.svg">
+    <img class="icon" src="{{ page.rootdir }}/cl/img/icons/forum.svg">
+    <div>Join other community members and unlock the secrets of the universe in our Roleplaying is Magic forum!</div>
+</div>
+<div class="block news" onclick="location.href='{{ page.rootdir }}/news.html';">
+    <img class="title" src="cl/img/titles/news.svg">
+    <img class="icon" src="cl/img/icons/news.svg">
+    <div>Extra, Extra, read all about it! Here’s where you can read all about the latest developments of our favorite game!</div>
+</div> -->
