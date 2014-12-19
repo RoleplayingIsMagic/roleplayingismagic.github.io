@@ -3,7 +3,7 @@ markdown: redcarpet
 highlighter: pygments
 destination: _site/
 
-exclude: ['config.rb']
+exclude: ['.git', '.gitignore', 'config.rb', 'README.rst']
 
 # editions to build
 rules: true
